@@ -1,0 +1,49 @@
+# =============================================================================
+# .dockerignore — keep the build context small
+# =============================================================================
+
+# Large network data files (fetched at runtime)
+data/
+
+# Large benchmark intermediates
+benchmarks_final/*.npy
+benchmarks_final/*.npz
+benchmarks_final/*_data.json
+
+# Pre-computed NPZ accessibility arrays (large, fetched at runtime via Zenodo)
+# Exception: keep them if present so Docker figures mode can produce Fig 10
+# paper_figs_final/data/*.npz
+
+# Interactive map artifacts (generated at runtime)
+interactive_maps/*.pmtiles
+interactive_maps/*.geojsonl
+interactive_maps/screenshots/
+
+# OSMnx / HTTP cache
+cache/
+
+# Git metadata
+.git/
+.gitignore
+
+# IDE / AI / dev
+.claude/
+.vscode/
+.idea/
+.cursor/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# This file
+.dockerignore
+Dockerfile

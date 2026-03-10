@@ -1,0 +1,7150 @@
+{
+  "results": [
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1104
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 378
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 87
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 101
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 21
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 1716,
+      "dense_entries": 10000,
+      "compression_ratio": 5.827505827505828
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 872
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 99
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 21
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 3162,
+      "dense_entries": 10000,
+      "compression_ratio": 3.1625553447185326
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 1422
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 169
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 4816,
+      "dense_entries": 10000,
+      "compression_ratio": 2.0764119601328903
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 1910
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 7540,
+      "dense_entries": 10000,
+      "compression_ratio": 1.3262599469496021
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1104
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 872
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 169
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 2170,
+      "dense_entries": 10000,
+      "compression_ratio": 4.608294930875576
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 1422
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 3622,
+      "dense_entries": 10000,
+      "compression_ratio": 2.7609055770292654
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 1910
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 5120,
+      "dense_entries": 10000,
+      "compression_ratio": 1.953125
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 50,
+          "n_cost_entries": 2408
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 7798,
+      "dense_entries": 10000,
+      "compression_ratio": 1.2823800974608874
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1142
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 138
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 1316,
+      "dense_entries": 10000,
+      "compression_ratio": 7.598784194528875
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 246
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 2231,
+      "dense_entries": 10000,
+      "compression_ratio": 4.482294935006723
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 336
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 3321,
+      "dense_entries": 10000,
+      "compression_ratio": 3.0111412225233365
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 394
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 5559,
+      "dense_entries": 10000,
+      "compression_ratio": 1.7988846914912755
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1142
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 178
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 1345,
+      "dense_entries": 10000,
+      "compression_ratio": 7.434944237918216
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 304
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 2273,
+      "dense_entries": 10000,
+      "compression_ratio": 4.399472063352397
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 364
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 3333,
+      "dense_entries": 10000,
+      "compression_ratio": 3.0003000300030003
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 400
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 5549,
+      "dense_entries": 10000,
+      "compression_ratio": 1.8021265092809515
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 20,
+          "n_cost_entries": 128
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 10,
+          "n_cost_entries": 56
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 19
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 2172,
+      "dense_entries": 10000,
+      "compression_ratio": 4.6040515653775325
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 20,
+          "n_cost_entries": 176
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 10,
+          "n_cost_entries": 88
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 3258,
+      "dense_entries": 10000,
+      "compression_ratio": 3.0693677102516883
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 20,
+          "n_cost_entries": 288
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 10,
+          "n_cost_entries": 92
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 5554,
+      "dense_entries": 10000,
+      "compression_ratio": 1.8005041411595246
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8020
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 20,
+          "n_cost_entries": 380
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 8534,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1717834544176235
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1960
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 176
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 2172,
+      "dense_entries": 10000,
+      "compression_ratio": 4.6040515653775325
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 288
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 3284,
+      "dense_entries": 10000,
+      "compression_ratio": 3.045066991473812
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 364
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 5540,
+      "dense_entries": 10000,
+      "compression_ratio": 1.8050541516245486
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8020
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 400
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 8456,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1825922421948911
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1966
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 101
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 2092,
+      "dense_entries": 10000,
+      "compression_ratio": 4.780114722753346
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 2960
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 3154,
+      "dense_entries": 10000,
+      "compression_ratio": 3.170577045022194
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 5368,
+      "dense_entries": 10000,
+      "compression_ratio": 1.8628912071535022
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8020
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 8254,
+      "dense_entries": 10000,
+      "compression_ratio": 1.2115338017930701
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 1966
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        }
+      ],
+      "total_cost_entries": 2191,
+      "dense_entries": 10000,
+      "compression_ratio": 4.564125969876769
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 3004
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 81
+        }
+      ],
+      "total_cost_entries": 3085,
+      "dense_entries": 10000,
+      "compression_ratio": 3.2414910858995136
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 5140
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 81
+        }
+      ],
+      "total_cost_entries": 5221,
+      "dense_entries": 10000,
+      "compression_ratio": 1.915341888527102
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8020
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 81
+        }
+      ],
+      "total_cost_entries": 8101,
+      "dense_entries": 10000,
+      "compression_ratio": 1.2344155042587335
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 4040
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 101
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 4166,
+      "dense_entries": 10000,
+      "compression_ratio": 2.400384061449832
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 6204
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 6414,
+      "dense_entries": 10000,
+      "compression_ratio": 1.5590894917368257
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8680
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 8924,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1205737337516808
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9940
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 10190,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9813542688910697
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 4048
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 65
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 4122,
+      "dense_entries": 10000,
+      "compression_ratio": 2.42600679281902
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 6204
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 79
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 6292,
+      "dense_entries": 10000,
+      "compression_ratio": 1.589319771137953
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8680
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 81
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 8770,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1402508551881414
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9940
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 9,
+          "n_cost_entries": 81
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 10030,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9970089730807578
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 4048
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 4112,
+      "dense_entries": 10000,
+      "compression_ratio": 2.431906614785992
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 6204
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 6240,
+      "dense_entries": 10000,
+      "compression_ratio": 1.6025641025641026
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8680
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 8716,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1473152822395594
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9940
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 9976,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0024057738572574
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 4048
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 4112,
+      "dense_entries": 10000,
+      "compression_ratio": 2.431906614785992
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 6246
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 6271,
+      "dense_entries": 10000,
+      "compression_ratio": 1.5946420028703556
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 8680
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 8705,
+      "dense_entries": 10000,
+      "compression_ratio": 1.1487650775416427
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9940
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 9965,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0035122930255895
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 7180
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 62
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 7251,
+      "dense_entries": 10000,
+      "compression_ratio": 1.3791201213625708
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9496
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9569,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0450412791305257
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9980
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 10053,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9947279419078882
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 10000
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 10073,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9927529038022436
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 7188
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 7213,
+      "dense_entries": 10000,
+      "compression_ratio": 1.3863856924996534
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9496
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 9521,
+      "dense_entries": 10000,
+      "compression_ratio": 1.050309841403214
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9980
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 10005,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9995002498750625
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 10000
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 10025,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9975062344139651
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 7366
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 7382,
+      "dense_entries": 10000,
+      "compression_ratio": 1.3546464372798699
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9496
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9505,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0520778537611783
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9980
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9989,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0011012113324658
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 10000
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 10009,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9991008092716556
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 7366
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 7382,
+      "dense_entries": 10000,
+      "compression_ratio": 1.3546464372798699
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9496
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9505,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0520778537611783
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 9980
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9989,
+      "dense_entries": 10000,
+      "compression_ratio": 1.0011012113324658
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_10x10",
+      "n_zones": 100,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 100,
+          "n_cost_entries": 10000
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 10009,
+      "dense_entries": 10000,
+      "compression_ratio": 0.9991008092716556
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 4804
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 1660
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 397
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 55,
+          "n_cost_entries": 435
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 93
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 15,
+          "n_cost_entries": 101
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 7515,
+      "dense_entries": 160000,
+      "compression_ratio": 21.290751829673987
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 4222
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 429
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1015
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 99
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 14875,
+      "dense_entries": 160000,
+      "compression_ratio": 10.756302521008404
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 7652
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 939
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1555
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 24627,
+      "dense_entries": 160000,
+      "compression_ratio": 6.496934259146466
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 11660
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1555
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2585
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 43269,
+      "dense_entries": 160000,
+      "compression_ratio": 3.697797499364441
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 4804
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 4222
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 939
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 169
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 10159,
+      "dense_entries": 160000,
+      "compression_ratio": 15.749581651737376
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 7652
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1555
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 18347,
+      "dense_entries": 160000,
+      "compression_ratio": 8.720771788303265
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 11660
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2135
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 28105,
+      "dense_entries": 160000,
+      "compression_ratio": 5.692937199786515
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 200,
+          "n_cost_entries": 20402
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2845
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 50497,
+      "dense_entries": 160000,
+      "compression_ratio": 3.168505059706517
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 5058
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 558
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 20,
+          "n_cost_entries": 166
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 5818,
+      "dense_entries": 160000,
+      "compression_ratio": 27.500859401856307
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 1124
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 163
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 10212,
+      "dense_entries": 160000,
+      "compression_ratio": 15.667841754798276
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 1778
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 203
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 16066,
+      "dense_entries": 160000,
+      "compression_ratio": 9.95891945723889
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 3080
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 30330,
+      "dense_entries": 160000,
+      "compression_ratio": 5.275304978569073
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 5058
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 762
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 165
+        },
+        {
+          "layer": 3,
+          "radius": 54000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 5994,
+      "dense_entries": 160000,
+      "compression_ratio": 26.69336002669336
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 1468
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 10468,
+      "dense_entries": 160000,
+      "compression_ratio": 15.284677111196025
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 2310
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 16470,
+      "dense_entries": 160000,
+      "compression_ratio": 9.714632665452337
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 3732
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 30832,
+      "dense_entries": 160000,
+      "compression_ratio": 5.1894135962636225
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 70,
+          "n_cost_entries": 536
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 35,
+          "n_cost_entries": 249
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 79
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 8,
+          "n_cost_entries": 36
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 9816,
+      "dense_entries": 160000,
+      "compression_ratio": 16.299918500407497
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 70,
+          "n_cost_entries": 744
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 35,
+          "n_cost_entries": 491
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 121
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 8,
+          "n_cost_entries": 56
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 15488,
+      "dense_entries": 160000,
+      "compression_ratio": 10.330578512396695
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 70,
+          "n_cost_entries": 1462
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 35,
+          "n_cost_entries": 615
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 29334,
+      "dense_entries": 160000,
+      "compression_ratio": 5.454421490420672
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 50920
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 70,
+          "n_cost_entries": 2562
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 35,
+          "n_cost_entries": 1041
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 54822,
+      "dense_entries": 160000,
+      "compression_ratio": 2.91853635401846
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8900
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 748
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 164
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 9848,
+      "dense_entries": 160000,
+      "compression_ratio": 16.246953696181965
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 1462
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 276
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 15834,
+      "dense_entries": 160000,
+      "compression_ratio": 10.104837691044587
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 2310
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 360
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 29706,
+      "dense_entries": 160000,
+      "compression_ratio": 5.386117282703831
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 50920
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 70,
+          "n_cost_entries": 3732
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 400
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 55088,
+      "dense_entries": 160000,
+      "compression_ratio": 2.904443799012489
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8918
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 435
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 9539,
+      "dense_entries": 160000,
+      "compression_ratio": 16.773246671558862
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14060
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1027
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 8,
+          "n_cost_entries": 62
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 15158,
+      "dense_entries": 160000,
+      "compression_ratio": 10.55548225359546
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1667
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 28740,
+      "dense_entries": 160000,
+      "compression_ratio": 5.567153792623521
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 50920
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2665
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 53658,
+      "dense_entries": 160000,
+      "compression_ratio": 2.981848000298185
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 8918
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 955
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 9937,
+      "dense_entries": 160000,
+      "compression_ratio": 16.101439066116534
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 14260
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 500
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 14785,
+      "dense_entries": 160000,
+      "compression_ratio": 10.821778829895164
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 27000
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 738
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 27763,
+      "dense_entries": 160000,
+      "compression_ratio": 5.763065951085978
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 50920
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 986
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 51931,
+      "dense_entries": 160000,
+      "compression_ratio": 3.0810113419730025
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 20140
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 435
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 15,
+          "n_cost_entries": 97
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 19
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 20716,
+      "dense_entries": 160000,
+      "compression_ratio": 7.723498744931454
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 34504
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1015
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 15,
+          "n_cost_entries": 169
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 21
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 35734,
+      "dense_entries": 160000,
+      "compression_ratio": 4.477528404320815
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 59580
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1667
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 61482,
+      "dense_entries": 160000,
+      "compression_ratio": 2.602387690706223
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 102720
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2665
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 105660,
+      "dense_entries": 160000,
+      "compression_ratio": 1.5142911224682944
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 20140
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 322
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 68
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 20539,
+      "dense_entries": 160000,
+      "compression_ratio": 7.790057938555918
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 34504
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 580
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 94
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 35187,
+      "dense_entries": 160000,
+      "compression_ratio": 4.5471338846733165
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 59580
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 812
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 60501,
+      "dense_entries": 160000,
+      "compression_ratio": 2.644584387034925
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 102720
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 1000
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 103829,
+      "dense_entries": 160000,
+      "compression_ratio": 1.5409952903331439
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 20268
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 25,
+          "n_cost_entries": 345
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 20638,
+      "dense_entries": 160000,
+      "compression_ratio": 7.752689214071131
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 34522
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 18,
+          "n_cost_entries": 236
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 34767,
+      "dense_entries": 160000,
+      "compression_ratio": 4.602065176748066
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 59580
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 18,
+          "n_cost_entries": 298
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 59887,
+      "dense_entries": 160000,
+      "compression_ratio": 2.6716983652545627
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 102720
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 18,
+          "n_cost_entries": 324
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 103053,
+      "dense_entries": 160000,
+      "compression_ratio": 1.5525991480112176
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 20268
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 25,
+          "n_cost_entries": 361
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 20654,
+      "dense_entries": 160000,
+      "compression_ratio": 7.746683451147478
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 34620
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 185
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 34814,
+      "dense_entries": 160000,
+      "compression_ratio": 4.595852243350376
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 59580
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 219
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 59808,
+      "dense_entries": 160000,
+      "compression_ratio": 2.675227394328518
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 102720
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 102954,
+      "dense_entries": 160000,
+      "compression_ratio": 1.5540921188103425
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 42520
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 25,
+          "n_cost_entries": 341
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 44
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 42923,
+      "dense_entries": 160000,
+      "compression_ratio": 3.7276052466043845
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 77204
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 25,
+          "n_cost_entries": 501
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 62
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 77785,
+      "dense_entries": 160000,
+      "compression_ratio": 2.056951854470656
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 110560
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 25,
+          "n_cost_entries": 589
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 111231,
+      "dense_entries": 160000,
+      "compression_ratio": 1.4384479147000386
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 150480
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 25,
+          "n_cost_entries": 625
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 151187,
+      "dense_entries": 160000,
+      "compression_ratio": 1.05829204891955
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 42544
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 169
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 42738,
+      "dense_entries": 160000,
+      "compression_ratio": 3.7437409331274276
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 77204
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 77444,
+      "dense_entries": 160000,
+      "compression_ratio": 2.066008987139094
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 110560
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 110810,
+      "dense_entries": 160000,
+      "compression_ratio": 1.4439130042414945
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 150480
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 150730,
+      "dense_entries": 160000,
+      "compression_ratio": 1.0615006966098322
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 42876
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 144
+        }
+      ],
+      "total_cost_entries": 43020,
+      "dense_entries": 160000,
+      "compression_ratio": 3.7192003719200373
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 77204
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 77304,
+      "dense_entries": 160000,
+      "compression_ratio": 2.069750595053296
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 110560
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 110660,
+      "dense_entries": 160000,
+      "compression_ratio": 1.4458702331465751
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 150480
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 150580,
+      "dense_entries": 160000,
+      "compression_ratio": 1.0625581086465665
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 42876
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 144
+        }
+      ],
+      "total_cost_entries": 43020,
+      "dense_entries": 160000,
+      "compression_ratio": 3.7192003719200373
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 77228
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 77292,
+      "dense_entries": 160000,
+      "compression_ratio": 2.070071934999741
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 110560
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 110624,
+      "dense_entries": 160000,
+      "compression_ratio": 1.4463407578825571
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_20x20",
+      "n_zones": 400,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 2,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 400,
+          "n_cost_entries": 150480
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 150544,
+      "dense_entries": 160000,
+      "compression_ratio": 1.0628122010840684
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 9,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 11104
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 3838
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 932
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 120,
+          "n_cost_entries": 998
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 32,
+          "n_cost_entries": 226
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 32,
+          "n_cost_entries": 242
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 10,
+          "n_cost_entries": 58
+        },
+        {
+          "layer": 7,
+          "radius": 34171.875,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 8,
+          "radius": 51257.8125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 17416,
+      "dense_entries": 810000,
+      "compression_ratio": 46.50895728066146
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 9,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 10072
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 984
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2470
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 32,
+          "n_cost_entries": 236
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 32,
+          "n_cost_entries": 522
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 10,
+          "n_cost_entries": 90
+        },
+        {
+          "layer": 7,
+          "radius": 34171.875,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 8,
+          "radius": 51257.8125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 35232,
+      "dense_entries": 810000,
+      "compression_ratio": 22.990463215258856
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 9,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 18782
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2334
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 120,
+          "n_cost_entries": 4120
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 32,
+          "n_cost_entries": 502
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 32,
+          "n_cost_entries": 784
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 10,
+          "n_cost_entries": 94
+        },
+        {
+          "layer": 7,
+          "radius": 34171.875,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 8,
+          "radius": 51257.8125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 59994,
+      "dense_entries": 810000,
+      "compression_ratio": 13.501350135013501
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 9,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 3000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 29510
+        },
+        {
+          "layer": 2,
+          "radius": 4500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 4120
+        },
+        {
+          "layer": 3,
+          "radius": 6750.0,
+          "n_representatives": 120,
+          "n_cost_entries": 8100
+        },
+        {
+          "layer": 4,
+          "radius": 10125.0,
+          "n_representatives": 32,
+          "n_cost_entries": 784
+        },
+        {
+          "layer": 5,
+          "radius": 15187.5,
+          "n_representatives": 32,
+          "n_cost_entries": 1002
+        },
+        {
+          "layer": 6,
+          "radius": 22781.25,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 7,
+          "radius": 34171.875,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 8,
+          "radius": 51257.8125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 109494,
+      "dense_entries": 810000,
+      "compression_ratio": 7.397665625513727
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 11104
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 10072
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2334
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 476
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 90
+        },
+        {
+          "layer": 5,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 24085,
+      "dense_entries": 810000,
+      "compression_ratio": 33.63089059580652
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 18782
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 120,
+          "n_cost_entries": 4120
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 732
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 5,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 44583,
+      "dense_entries": 810000,
+      "compression_ratio": 18.168360137272053
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 29510
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 120,
+          "n_cost_entries": 6100
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 912
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 5,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 69991,
+      "dense_entries": 810000,
+      "compression_ratio": 11.572916517838008
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 6,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 4000.0,
+          "n_representatives": 450,
+          "n_cost_entries": 55372
+        },
+        {
+          "layer": 2,
+          "radius": 8000.0,
+          "n_representatives": 120,
+          "n_cost_entries": 9962
+        },
+        {
+          "layer": 3,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 1020
+        },
+        {
+          "layer": 4,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 5,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 132323,
+      "dense_entries": 810000,
+      "compression_ratio": 6.1213847932710115
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 11628
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 1348
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 44,
+          "n_cost_entries": 438
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 13514,
+      "dense_entries": 810000,
+      "compression_ratio": 59.93784223767944
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 2816
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 29,
+          "n_cost_entries": 415
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 7,
+          "n_cost_entries": 49
+        }
+      ],
+      "total_cost_entries": 24120,
+      "dense_entries": 810000,
+      "compression_ratio": 33.582089552238806
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 4662
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 29,
+          "n_cost_entries": 569
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 7,
+          "n_cost_entries": 49
+        }
+      ],
+      "total_cost_entries": 38640,
+      "dense_entries": 810000,
+      "compression_ratio": 20.96273291925466
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 5000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 8948
+        },
+        {
+          "layer": 2,
+          "radius": 12500.0,
+          "n_representatives": 29,
+          "n_cost_entries": 783
+        },
+        {
+          "layer": 3,
+          "radius": 31250.0,
+          "n_representatives": 7,
+          "n_cost_entries": 49
+        }
+      ],
+      "total_cost_entries": 75640,
+      "dense_entries": 810000,
+      "compression_ratio": 10.708619777895294
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 11628
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 1950
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 29,
+          "n_cost_entries": 419
+        },
+        {
+          "layer": 3,
+          "radius": 54000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 14022,
+      "dense_entries": 810000,
+      "compression_ratio": 57.76636713735559
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 3802
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 296
+        },
+        {
+          "layer": 3,
+          "radius": 54000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 24947,
+      "dense_entries": 810000,
+      "compression_ratio": 32.46883392792721
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 6288
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 360
+        },
+        {
+          "layer": 3,
+          "radius": 54000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 40017,
+      "dense_entries": 810000,
+      "compression_ratio": 20.241397406102408
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 2000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 2000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 11592
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 20,
+          "n_cost_entries": 400
+        },
+        {
+          "layer": 3,
+          "radius": 54000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 77861,
+      "dense_entries": 810000,
+      "compression_ratio": 10.403154339142832
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 158,
+          "n_cost_entries": 1254
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 79,
+          "n_cost_entries": 615
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 30,
+          "n_cost_entries": 178
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 17,
+          "n_cost_entries": 93
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 8,
+          "n_cost_entries": 36
+        },
+        {
+          "layer": 6,
+          "radius": 34171.875,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 23041,
+      "dense_entries": 810000,
+      "compression_ratio": 35.15472418731826
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 158,
+          "n_cost_entries": 1852
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 79,
+          "n_cost_entries": 1291
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 30,
+          "n_cost_entries": 298
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 17,
+          "n_cost_entries": 171
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 8,
+          "n_cost_entries": 56
+        },
+        {
+          "layer": 6,
+          "radius": 34171.875,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 37053,
+      "dense_entries": 810000,
+      "compression_ratio": 21.860578090842846
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 158,
+          "n_cost_entries": 3776
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 79,
+          "n_cost_entries": 1673
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 30,
+          "n_cost_entries": 482
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 17,
+          "n_cost_entries": 233
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 8,
+          "n_cost_entries": 60
+        },
+        {
+          "layer": 6,
+          "radius": 34171.875,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 72109,
+      "dense_entries": 810000,
+      "compression_ratio": 11.232994494445908
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 130020
+        },
+        {
+          "layer": 1,
+          "radius": 4500.0,
+          "n_representatives": 158,
+          "n_cost_entries": 7042
+        },
+        {
+          "layer": 2,
+          "radius": 6750.0,
+          "n_representatives": 79,
+          "n_cost_entries": 3427
+        },
+        {
+          "layer": 3,
+          "radius": 10125.0,
+          "n_representatives": 30,
+          "n_cost_entries": 746
+        },
+        {
+          "layer": 4,
+          "radius": 15187.5,
+          "n_representatives": 17,
+          "n_cost_entries": 281
+        },
+        {
+          "layer": 5,
+          "radius": 22781.25,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        },
+        {
+          "layer": 6,
+          "radius": 34171.875,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 141605,
+      "dense_entries": 810000,
+      "compression_ratio": 5.720137000812119
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20840
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 1852
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 44,
+          "n_cost_entries": 416
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 84
+        },
+        {
+          "layer": 4,
+          "radius": 48000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 23208,
+      "dense_entries": 810000,
+      "compression_ratio": 34.901758014477764
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 3776
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 44,
+          "n_cost_entries": 836
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 124
+        },
+        {
+          "layer": 4,
+          "radius": 48000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 38112,
+      "dense_entries": 810000,
+      "compression_ratio": 21.25314861460957
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 6288
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 44,
+          "n_cost_entries": 1242
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 142
+        },
+        {
+          "layer": 4,
+          "radius": 48000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 73548,
+      "dense_entries": 810000,
+      "compression_ratio": 11.013215859030836
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 130020
+        },
+        {
+          "layer": 1,
+          "radius": 6000.0,
+          "n_representatives": 158,
+          "n_cost_entries": 11592
+        },
+        {
+          "layer": 2,
+          "radius": 12000.0,
+          "n_representatives": 44,
+          "n_cost_entries": 1766
+        },
+        {
+          "layer": 3,
+          "radius": 24000.0,
+          "n_representatives": 12,
+          "n_cost_entries": 144
+        },
+        {
+          "layer": 4,
+          "radius": 48000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 143538,
+      "dense_entries": 810000,
+      "compression_ratio": 5.643104961752289
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20866
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 998
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 32,
+          "n_cost_entries": 520
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 22409,
+      "dense_entries": 810000,
+      "compression_ratio": 36.146191262439196
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 33360
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2514
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 36076,
+      "dense_entries": 810000,
+      "compression_ratio": 22.452600066526223
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 4352
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 70452,
+      "dense_entries": 810000,
+      "compression_ratio": 11.497189575881452
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 130020
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 8480
+        },
+        {
+          "layer": 2,
+          "radius": 18750.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 46875.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 138750,
+      "dense_entries": 810000,
+      "compression_ratio": 5.837837837837838
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 20866
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2378
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 3,
+          "radius": 81000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 23430,
+      "dense_entries": 810000,
+      "compression_ratio": 34.571062740076826
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 34096
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 1181
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 35377,
+      "dense_entries": 810000,
+      "compression_ratio": 22.896232015151085
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 65860
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 1957
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 67917,
+      "dense_entries": 810000,
+      "compression_ratio": 11.926321834003268
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 3000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 3000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 130020
+        },
+        {
+          "layer": 1,
+          "radius": 9000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 3187
+        },
+        {
+          "layer": 2,
+          "radius": 27000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        }
+      ],
+      "total_cost_entries": 133307,
+      "dense_entries": 810000,
+      "compression_ratio": 6.0762000495097785
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 48440
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 998
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 32,
+          "n_cost_entries": 232
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 10,
+          "n_cost_entries": 52
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 10,
+          "n_cost_entries": 58
+        },
+        {
+          "layer": 5,
+          "radius": 37968.75,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 6,
+          "radius": 56953.125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 49798,
+      "dense_entries": 810000,
+      "compression_ratio": 16.265713482469174
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 85404
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 2470
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 32,
+          "n_cost_entries": 476
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 10,
+          "n_cost_entries": 56
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 10,
+          "n_cost_entries": 90
+        },
+        {
+          "layer": 5,
+          "radius": 37968.75,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 6,
+          "radius": 56953.125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 88514,
+      "dense_entries": 810000,
+      "compression_ratio": 9.1510947420747
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 154680
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 4352
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 32,
+          "n_cost_entries": 522
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 10,
+          "n_cost_entries": 90
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 5,
+          "radius": 37968.75,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 6,
+          "radius": 56953.125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 159762,
+      "dense_entries": 810000,
+      "compression_ratio": 5.070041687009427
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 7,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 293620
+        },
+        {
+          "layer": 1,
+          "radius": 7500.0,
+          "n_representatives": 120,
+          "n_cost_entries": 8480
+        },
+        {
+          "layer": 2,
+          "radius": 11250.0,
+          "n_representatives": 32,
+          "n_cost_entries": 912
+        },
+        {
+          "layer": 3,
+          "radius": 16875.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 4,
+          "radius": 25312.5,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 5,
+          "radius": 37968.75,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        },
+        {
+          "layer": 6,
+          "radius": 56953.125,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 303230,
+      "dense_entries": 810000,
+      "compression_ratio": 2.671239653068628
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 48504
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 717
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 18,
+          "n_cost_entries": 148
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 49394,
+      "dense_entries": 810000,
+      "compression_ratio": 16.398752884965784
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 85404
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 1395
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 18,
+          "n_cost_entries": 252
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 87076,
+      "dense_entries": 810000,
+      "compression_ratio": 9.302218751435527
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 154680
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 2179
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 18,
+          "n_cost_entries": 298
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 157182,
+      "dense_entries": 810000,
+      "compression_ratio": 5.153261823872962
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 293620
+        },
+        {
+          "layer": 1,
+          "radius": 10000.0,
+          "n_representatives": 65,
+          "n_cost_entries": 3483
+        },
+        {
+          "layer": 2,
+          "radius": 20000.0,
+          "n_representatives": 18,
+          "n_cost_entries": 324
+        },
+        {
+          "layer": 3,
+          "radius": 40000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 297452,
+      "dense_entries": 810000,
+      "compression_ratio": 2.7231284375294167
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 48512
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 55,
+          "n_cost_entries": 955
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 8,
+          "n_cost_entries": 44
+        },
+        {
+          "layer": 3,
+          "radius": 78125.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 49520,
+      "dense_entries": 810000,
+      "compression_ratio": 16.35702746365105
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 85634
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 36,
+          "n_cost_entries": 582
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 86252,
+      "dense_entries": 810000,
+      "compression_ratio": 9.391086583499513
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 154680
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 36,
+          "n_cost_entries": 900
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 155616,
+      "dense_entries": 810000,
+      "compression_ratio": 5.205120296113511
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 293620
+        },
+        {
+          "layer": 1,
+          "radius": 12500.0,
+          "n_representatives": 36,
+          "n_cost_entries": 1210
+        },
+        {
+          "layer": 2,
+          "radius": 31250.0,
+          "n_representatives": 6,
+          "n_cost_entries": 36
+        }
+      ],
+      "total_cost_entries": 294866,
+      "dense_entries": 810000,
+      "compression_ratio": 2.7470105064673445
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 48512
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 989
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 8,
+          "n_cost_entries": 64
+        }
+      ],
+      "total_cost_entries": 49565,
+      "dense_entries": 810000,
+      "compression_ratio": 16.342176939372543
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 85620
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 538
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 86183,
+      "dense_entries": 810000,
+      "compression_ratio": 9.398605293387327
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 154680
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 784
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 155489,
+      "dense_entries": 810000,
+      "compression_ratio": 5.209371724044788
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 5000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 5000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 293620
+        },
+        {
+          "layer": 1,
+          "radius": 15000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 1002
+        },
+        {
+          "layer": 2,
+          "radius": 45000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 294647,
+      "dense_entries": 810000,
+      "compression_ratio": 2.749052255750101
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 106860
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 939
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 97
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 19
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 107940,
+      "dense_entries": 810000,
+      "compression_ratio": 7.5041689827682045
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 1.5,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 207704
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 1555
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 177
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 21
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 209482,
+      "dense_entries": 810000,
+      "compression_ratio": 3.8666806694608606
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 2.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 323220
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2135
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 325620,
+      "dense_entries": 810000,
+      "compression_ratio": 2.487562189054726
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 1.5,
+      "overlap_factor": 3.0,
+      "n_layers": 5,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 552700
+        },
+        {
+          "layer": 1,
+          "radius": 12000.0,
+          "n_representatives": 55,
+          "n_cost_entries": 2845
+        },
+        {
+          "layer": 2,
+          "radius": 18000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 3,
+          "radius": 27000.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        },
+        {
+          "layer": 4,
+          "radius": 40500.0,
+          "n_representatives": 5,
+          "n_cost_entries": 25
+        }
+      ],
+      "total_cost_entries": 555820,
+      "dense_entries": 810000,
+      "compression_ratio": 1.4573063221906373
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 106904
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 476
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 90
+        },
+        {
+          "layer": 3,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 107479,
+      "dense_entries": 810000,
+      "compression_ratio": 7.53635593929977
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 1.5,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 207704
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 732
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 208545,
+      "dense_entries": 810000,
+      "compression_ratio": 3.8840538013378407
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 2.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 323220
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 912
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 324241,
+      "dense_entries": 810000,
+      "compression_ratio": 2.4981418142677825
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.0,
+      "overlap_factor": 3.0,
+      "n_layers": 4,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 552700
+        },
+        {
+          "layer": 1,
+          "radius": 16000.0,
+          "n_representatives": 32,
+          "n_cost_entries": 1020
+        },
+        {
+          "layer": 2,
+          "radius": 32000.0,
+          "n_representatives": 10,
+          "n_cost_entries": 100
+        },
+        {
+          "layer": 3,
+          "radius": 64000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 553829,
+      "dense_entries": 810000,
+      "compression_ratio": 1.4625452982779883
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 107710
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 24,
+          "n_cost_entries": 344
+        },
+        {
+          "layer": 2,
+          "radius": 50000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 108070,
+      "dense_entries": 810000,
+      "compression_ratio": 7.495142037568243
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 207704
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 21,
+          "n_cost_entries": 387
+        },
+        {
+          "layer": 2,
+          "radius": 50000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 208100,
+      "dense_entries": 810000,
+      "compression_ratio": 3.892359442575685
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 323220
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 21,
+          "n_cost_entries": 431
+        },
+        {
+          "layer": 2,
+          "radius": 50000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 323660,
+      "dense_entries": 810000,
+      "compression_ratio": 2.5026262126923315
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 2.5,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 552700
+        },
+        {
+          "layer": 1,
+          "radius": 20000.0,
+          "n_representatives": 21,
+          "n_cost_entries": 441
+        },
+        {
+          "layer": 2,
+          "radius": 50000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 553150,
+      "dense_entries": 810000,
+      "compression_ratio": 1.4643405947753774
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 107710
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 24,
+          "n_cost_entries": 366
+        },
+        {
+          "layer": 2,
+          "radius": 72000.0,
+          "n_representatives": 4,
+          "n_cost_entries": 16
+        }
+      ],
+      "total_cost_entries": 108092,
+      "dense_entries": 810000,
+      "compression_ratio": 7.493616548865781
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 1.5,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 208116
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 215
+        },
+        {
+          "layer": 2,
+          "radius": 72000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 208340,
+      "dense_entries": 810000,
+      "compression_ratio": 3.887875587981185
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 2.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 323220
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 72000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 323454,
+      "dense_entries": 810000,
+      "compression_ratio": 2.504220074570109
+    },
+    {
+      "experiment": "layer_structure",
+      "network_label": "grid_30x30",
+      "n_zones": 900,
+      "base_radius": 8000.0,
+      "increase_factor": 3.0,
+      "overlap_factor": 3.0,
+      "n_layers": 3,
+      "layers": [
+        {
+          "layer": 0,
+          "radius": 8000.0,
+          "n_representatives": 900,
+          "n_cost_entries": 552700
+        },
+        {
+          "layer": 1,
+          "radius": 24000.0,
+          "n_representatives": 15,
+          "n_cost_entries": 225
+        },
+        {
+          "layer": 2,
+          "radius": 72000.0,
+          "n_representatives": 3,
+          "n_cost_entries": 9
+        }
+      ],
+      "total_cost_entries": 552934,
+      "dense_entries": 810000,
+      "compression_ratio": 1.4649126297171091
+    }
+  ]
+}

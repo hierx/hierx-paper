@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accessibility Map — hierx</title>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/pmtiles@3.2.1/dist/pmtiles.js"></script>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  .control-panel {
+    position: absolute; top: 10px; left: 10px; z-index: 1;
+    background: rgba(255,255,255,0.95); border-radius: 8px;
+    padding: 12px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 13px; max-width: 240px;
+  }
+  .control-panel h3 { margin: 0 0 8px; font-size: 15px; }
+  .control-panel label { display: block; margin: 4px 0; cursor: pointer; }
+  .control-panel input[type="radio"] { margin-right: 6px; }
+  .control-section { margin-bottom: 10px; }
+  .control-divider { border-top: 1px solid #ddd; margin: 8px 0; }
+  .legend {
+    position: absolute; bottom: 30px; left: 10px; z-index: 1;
+    background: rgba(255,255,255,0.95); border-radius: 8px;
+    padding: 10px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 12px; min-width: 180px;
+  }
+  .legend-title { font-weight: 600; margin-bottom: 6px; }
+  .legend-bar {
+    height: 14px; border-radius: 3px; margin-bottom: 4px;
+  }
+  .legend-labels { display: flex; justify-content: space-between; color: #555; }
+  .dynamic-toggle {
+    display: block; margin-top: 6px; font-size: 11px; color: #666; cursor: pointer;
+  }
+  .dynamic-toggle input { margin-right: 4px; }
+  .info-box {
+    position: absolute; top: 10px; right: 10px; z-index: 1;
+    background: rgba(255,255,255,0.95); border-radius: 8px;
+    padding: 10px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 12px; max-width: 220px; color: #444;
+  }
+  .control-panel select {
+    width: 100%; padding: 3px 4px; margin-top: 4px; font-size: 13px;
+    border: 1px solid #ccc; border-radius: 4px; background: #fff;
+  }
+  .info-box a { color: #2563eb; }
+  .maplibregl-popup-content { font-size: 13px; padding: 10px 14px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="control-panel">
+  <div class="control-section">
+    <h3>Network</h3>
+    <label><input type="radio" name="dataset" value="gb_drive" checked /> GB Driving</label>
+    <label><input type="radio" name="dataset" value="london_walk" /> London Walking</label>
+  </div>
+  <div class="control-divider"></div>
+  <div class="control-section">
+    <h3>Metric</h3>
+    <label><input type="radio" name="metric" value="pop" checked /> Population reached</label>
+    <label><input type="radio" name="metric" value="emp" /> Employment reached</label>
+  </div>
+  <div class="control-divider"></div>
+  <div class="control-section">
+    <h3>Colormap</h3>
+    <select id="colormap-select">
+      <option value="inferno" selected>Inferno</option>
+      <option value="inferno_r">Inferno (reversed)</option>
+      <option value="viridis">Viridis</option>
+      <option value="viridis_r">Viridis (reversed)</option>
+    </select>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-title" id="legend-title">Population reached</div>
+  <div class="legend-bar"></div>
+  <div class="legend-labels">
+    <span id="legend-min">Low</span>
+    <span id="legend-max">High</span>
+  </div>
+  <label class="dynamic-toggle">
+    <input type="checkbox" id="dynamic-cmap" checked />
+    Auto-scale to view
+  </label>
+</div>
+
+<div class="info-box" id="info-box">
+  <strong id="info-title">GB Driving Network</strong><br/>
+  <span id="info-stats">2.58M nodes · 3.02M edges</span><br/>
+  Hierarchical O(n log n) accessibility<br/>
+  <a href="https://github.com/hierx/hierx" target="_blank">github.com/hierx/hierx</a>
+</div>
+
+<script>
+const protocol = new pmtiles.Protocol();
+maplibregl.addProtocol("pmtiles", protocol.tile);
+
+// --- Dataset configuration ---
+
+const DATASETS = {
+  gb_drive: {
+    label: "GB Driving Network",
+    pmtilesFile: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/gb_drive_accessibility.pmtiles",
+    center: [-2.5, 54.0],
+    zoom: 6,
+    lineWidth: ["interpolate", ["linear"], ["zoom"], 5, 0.4, 8, 0.8, 11, 1.5, 13, 2.5],
+    info: { nodes: "2.58M", edges: "3.02M" },
+    metrics: {
+      pop: { property: "pop_reached", title: "Population reached", min: 0.0808, max: 7.6392 },
+      emp: { property: "emp_reached", title: "Employment reached", min: 0.0379, max: 5.0104 },
+    },
+  },
+  london_walk: {
+    label: "London Walking Network",
+    pmtilesFile: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/london_walk_accessibility.pmtiles",
+    center: [-0.117, 51.507],
+    zoom: 11,
+    lineWidth: ["interpolate", ["linear"], ["zoom"], 8, 1, 11, 1.5, 14, 3],
+    info: { nodes: "1.77M", edges: "1.92M" },
+    metrics: {
+      pop: { property: "pop_reached", title: "Population reached", min: 0.0161, max: 1.5484 },
+      emp: { property: "emp_reached", title: "Employment reached", min: 0.0083, max: 1.6812 },
+    },
+  },
+};
+
+// URL overrides: ?gb_drive=URL&london_walk=URL
+const params = new URLSearchParams(window.location.search);
+
+function pmtilesUrl(dsKey) {
+  return params.get(dsKey) || DATASETS[dsKey].pmtilesFile;
+}
+
+let activeDataset = "gb_drive";
+let activeMetric = "pop";
+
+// --- Colormaps ---
+
+const COLORMAPS = {
+  inferno: [
+    [0.00, "#000003"], [0.11, "#1a0b40"], [0.22, "#4a0b6a"], [0.33, "#761b6d"],
+    [0.44, "#a32b61"], [0.56, "#d04544"], [0.67, "#ed6a23"], [0.78, "#fb9b06"],
+    [0.89, "#f7d13c"], [1.00, "#fcfea4"],
+  ],
+  inferno_r: [
+    [0.00, "#fcfea4"], [0.11, "#f7d13c"], [0.22, "#fb9b06"], [0.33, "#ed6a23"],
+    [0.44, "#d04544"], [0.56, "#a32b61"], [0.67, "#761b6d"], [0.78, "#4a0b6a"],
+    [0.89, "#1a0b40"], [1.00, "#000003"],
+  ],
+  viridis: [
+    [0.00, "#440154"], [0.11, "#472777"], [0.22, "#3e4989"], [0.33, "#31668d"],
+    [0.44, "#26818e"], [0.56, "#1e9e88"], [0.67, "#36b877"], [0.78, "#6dce58"],
+    [0.89, "#b5dd2b"], [1.00, "#fde724"],
+  ],
+  viridis_r: [
+    [0.00, "#fde724"], [0.11, "#b5dd2b"], [0.22, "#6dce58"], [0.33, "#36b877"],
+    [0.44, "#1e9e88"], [0.56, "#26818e"], [0.67, "#31668d"], [0.78, "#3e4989"],
+    [0.89, "#472777"], [1.00, "#440154"],
+  ],
+};
+
+let activeColormap = "inferno";
+
+function activeRamp() {
+  return COLORMAPS[activeColormap];
+}
+
+function colorExpr(prop, lo, hi) {
+  const ramp = activeRamp();
+  const expr = ["interpolate", ["exponential", 2], ["get", prop]];
+  for (const [t, color] of ramp) {
+    expr.push(lo + (hi - lo) * t, color);
+  }
+  return expr;
+}
+
+function legendGradientCSS() {
+  return "linear-gradient(to right, " + activeRamp().map(([, c]) => c).join(", ") + ")";
+}
+
+// --- Layer ID helpers ---
+
+function layerId(dsKey, metric) {
+  return `${dsKey}-${metric}-layer`;
+}
+
+function allLayerIds() {
+  const ids = [];
+  for (const dsKey of Object.keys(DATASETS)) {
+    for (const metric of Object.keys(DATASETS[dsKey].metrics)) {
+      ids.push(layerId(dsKey, metric));
+    }
+  }
+  return ids;
+}
+
+function activeLayerId() {
+  return layerId(activeDataset, activeMetric);
+}
+
+// --- Map ---
+
+const startDs = DATASETS[activeDataset];
+const map = new maplibregl.Map({
+  container: "map",
+  style: {
+    version: 8,
+    sources: {
+      carto: {
+        type: "raster",
+        tiles: ["https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png"],
+        tileSize: 256,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; &copy; <a href="https://carto.com/">CARTO</a>',
+      },
+    },
+    layers: [{ id: "basemap", type: "raster", source: "carto" }],
+  },
+  center: startDs.center,
+  zoom: startDs.zoom,
+  maxZoom: 16,
+  minZoom: 4,
+});
+
+map.addControl(new maplibregl.NavigationControl(), "bottom-right");
+
+map.on("load", () => {
+  // Add one PMTiles source per dataset
+  for (const dsKey of Object.keys(DATASETS)) {
+    map.addSource(dsKey, {
+      type: "vector",
+      url: `pmtiles://${pmtilesUrl(dsKey)}`,
+    });
+  }
+
+  // Create 4 layers: 2 datasets x 2 metrics
+  for (const [dsKey, ds] of Object.entries(DATASETS)) {
+    for (const [metric, mcfg] of Object.entries(ds.metrics)) {
+      const isActive = dsKey === activeDataset && metric === activeMetric;
+      map.addLayer({
+        id: layerId(dsKey, metric),
+        type: "line",
+        source: dsKey,
+        "source-layer": "accessibility",
+        paint: {
+          "line-color": colorExpr(mcfg.property, mcfg.min, mcfg.max),
+          "line-width": ds.lineWidth,
+          "line-opacity": 0.85,
+        },
+        layout: {
+          visibility: isActive ? "visible" : "none",
+        },
+      });
+    }
+  }
+
+  updateLegend(activeCfg().min, activeCfg().max);
+  updateInfoBox();
+
+  // Recompute color range on pan/zoom
+  map.on("moveend", onViewChange);
+
+  // Click popup on all layers
+  for (const id of allLayerIds()) {
+    map.on("click", id, showPopup);
+    map.on("mouseenter", id, () => map.getCanvas().style.cursor = "pointer");
+    map.on("mouseleave", id, () => map.getCanvas().style.cursor = "");
+  }
+});
+
+// --- Helpers ---
+
+function activeCfg() {
+  return DATASETS[activeDataset].metrics[activeMetric];
+}
+
+function setVisibility() {
+  const target = activeLayerId();
+  for (const id of allLayerIds()) {
+    map.setLayoutProperty(id, "visibility", id === target ? "visible" : "none");
+  }
+}
+
+// --- Dynamic colormap ---
+
+function percentile(sorted, p) {
+  const i = (p / 100) * (sorted.length - 1);
+  const lo = Math.floor(i), hi = Math.ceil(i);
+  return lo === hi ? sorted[lo] : sorted[lo] + (sorted[hi] - sorted[lo]) * (i - lo);
+}
+
+let updateTimer = null;
+
+function onViewChange() {
+  if (!document.getElementById("dynamic-cmap").checked) return;
+  clearTimeout(updateTimer);
+  updateTimer = setTimeout(recomputeColorRange, 150);
+}
+
+function recomputeColorRange() {
+  const cfg = activeCfg();
+  const lid = activeLayerId();
+
+  const features = map.queryRenderedFeatures({ layers: [lid] });
+  if (features.length < 10) return;
+
+  const values = new Float64Array(features.length);
+  for (let i = 0; i < features.length; i++) {
+    values[i] = features[i].properties[cfg.property];
+  }
+  values.sort();
+
+  const lo = percentile(values, 1);
+  const hi = percentile(values, 99);
+  if (hi - lo < 1e-6) return;
+
+  map.setPaintProperty(lid, "line-color", colorExpr(cfg.property, lo, hi));
+  updateLegend(lo, hi);
+}
+
+function resetToGlobalRange() {
+  const cfg = activeCfg();
+  const lid = activeLayerId();
+  map.setPaintProperty(lid, "line-color", colorExpr(cfg.property, cfg.min, cfg.max));
+  updateLegend(cfg.min, cfg.max);
+}
+
+// --- UI updates ---
+
+function showPopup(e) {
+  if (!e.features || !e.features.length) return;
+  const props = e.features[0].properties;
+  new maplibregl.Popup()
+    .setLngLat(e.lngLat)
+    .setHTML(
+      `<strong>Population:</strong> ${Number(props.pop_reached).toFixed(4)}<br/>` +
+      `<strong>Employment:</strong> ${Number(props.emp_reached).toFixed(4)}`
+    )
+    .addTo(map);
+}
+
+function updateLegend(lo, hi) {
+  document.getElementById("legend-title").textContent = activeCfg().title;
+  document.getElementById("legend-min").textContent = lo.toFixed(3);
+  document.getElementById("legend-max").textContent = hi.toFixed(3);
+  document.querySelector(".legend-bar").style.background = legendGradientCSS();
+}
+
+function updateInfoBox() {
+  const ds = DATASETS[activeDataset];
+  document.getElementById("info-title").textContent = ds.label;
+  document.getElementById("info-stats").textContent = `${ds.info.nodes} nodes \u00b7 ${ds.info.edges} edges`;
+}
+
+// --- Controls ---
+
+// Network switch
+document.querySelectorAll('input[name="dataset"]').forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    activeDataset = e.target.value;
+    setVisibility();
+    updateInfoBox();
+
+    const ds = DATASETS[activeDataset];
+    map.flyTo({ center: ds.center, zoom: ds.zoom, duration: 1500 });
+
+    if (document.getElementById("dynamic-cmap").checked) {
+      map.once("idle", recomputeColorRange);
+    } else {
+      resetToGlobalRange();
+    }
+  });
+});
+
+// Metric switch
+document.querySelectorAll('input[name="metric"]').forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    activeMetric = e.target.value;
+    setVisibility();
+
+    if (document.getElementById("dynamic-cmap").checked) {
+      map.once("idle", recomputeColorRange);
+    } else {
+      resetToGlobalRange();
+    }
+  });
+});
+
+// Dynamic toggle
+document.getElementById("dynamic-cmap").addEventListener("change", (e) => {
+  if (e.target.checked) {
+    recomputeColorRange();
+  } else {
+    resetToGlobalRange();
+  }
+});
+
+// Colormap switch
+document.getElementById("colormap-select").addEventListener("change", (e) => {
+  activeColormap = e.target.value;
+  if (document.getElementById("dynamic-cmap").checked) {
+    recomputeColorRange();
+  } else {
+    resetToGlobalRange();
+  }
+});
+</script>
+</body>
+</html>

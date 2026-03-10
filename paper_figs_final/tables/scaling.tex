@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{Scaling performance of the hierarchical operator on random
+  spatial networks (mean edge cost $\bar{c} \approx 10{,}000$\,m).
+  Parameters: $\rho_0 = 10{,}000\text{\,m} \approx 1\bar{c}$,
+  $\gamma = 2$, $\alpha = 1.5$, $f(c) = (c+1000)^{-2}$.
+  Dense baseline measured only for $n \le 10{,}000$.
+  Times are median of 5 trials; matvec is median of $5 \times 10$
+  repetitions. Hierarchy build uses 32 parallel Dijkstra workers
+  (SciPy backend).}
+\label{tab:scaling}
+\begin{tabular}{rrrrrrrr}
+\toprule
+$n$ & edges & $K$ & $t_{\mathrm{hier}}$\,(s)
+    & $t_{\mathrm{inter}}$\,(s) & $t_{\mathrm{mv}}$\,(ms)
+    & $t_{\mathrm{dense}}$\,(s) & speedup \\
+\midrule
+       100 &      1{,}028 & 3 &   0.08 &   0.00 &  0.05 &       0.00 & $0\times$ \\
+       500 &      6{,}206 & 4 &   0.10 &   0.01 &  0.07 &       0.08 & $1\times$ \\
+   1{,}000 &     13{,}029 & 5 &   0.13 &   0.03 &  0.09 &       0.31 & $2\times$ \\
+   2{,}000 &     26{,}683 & 5 &   0.21 &   0.06 &  0.11 &       1.29 & $5\times$ \\
+   5{,}000 &     68{,}161 & 6 &   0.44 &   0.14 &  0.20 &       8.46 & $14\times$ \\
+  10{,}000 &    139{,}028 & 7 &   0.88 &   0.30 &  0.35 &      35.26 & $30\times$ \\
+  20{,}000 &    278{,}498 & 7 &   1.93 &   0.60 &  0.62 &        --- & --- \\
+  50{,}000 &    698{,}505 & 8 &   5.22 &   1.58 &  1.55 &        --- & --- \\
+ 100{,}000 & 1{,}402{,}413 & 8 &  12.64 &   3.37 &  3.73 &        --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table*}

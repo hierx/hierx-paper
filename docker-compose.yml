@@ -1,0 +1,6 @@
+services:
+  hierx:
+    build: .
+    shm_size: "256m"
+    volumes:
+      - ./output:/output

@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.reproduce_reference/
+
+# Large data files (regenerate with benchmarks_final/ fetch scripts)
+data/
+
+# Large benchmark outputs
+benchmarks_final/*.npy
+benchmarks_final/*.npz
+benchmarks_final/*_accessibility.json
+benchmarks_final/*_data.json
+
+# Pre-computed NPZ accessibility arrays
+paper_figs_final/data/*.npz
+
+# OSMnx / HTTP cache
+cache/
+
+# Research archive (tracked by workspace repo, not hierx-paper)
+hierx-research/
+
+# IDE / AI
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Run logs
+*.log
+
+# Interactive maps (generated with interactive_maps/generate_pmtiles.py)
+interactive_maps/*.pmtiles
+interactive_maps/*.geojsonl
+interactive_maps/screenshots/

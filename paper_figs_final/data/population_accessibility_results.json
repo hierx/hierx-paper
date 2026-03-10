@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "network": "london_walk_1M.graphml",
+    "n_zones": 1765539,
+    "n_layers": 11,
+    "hierarchy_build_time": 1928.9440399550367,
+    "interaction_build_time": 94.42973089101724,
+    "n_stored_entries": 81571517,
+    "interaction_fn": "steep: (c+60)^{-2}",
+    "total_nodes_explored": 528513536,
+    "peak_memory_bytes": 21363810000
+  },
+  "results": {
+    "population": {
+      "total_activity": 7692658.0,
+      "n_active_nodes": 485524,
+      "matvec_time": 0.15203958901111037,
+      "stats": {
+        "min": 0.016067125143625738,
+        "mean": 0.1883559534418118,
+        "max": 1.5497191510592074,
+        "std": 0.11697924479483018,
+        "p5": 0.02721590199325874,
+        "p50": 0.17110532545734713,
+        "p95": 0.4057162316759445
+      }
+    },
+    "workplace": {
+      "total_activity": 4150284.0,
+      "n_active_nodes": 485524,
+      "matvec_time": 0.15455884102266282,
+      "stats": {
+        "min": 0.008331702831753773,
+        "mean": 0.11519979686798751,
+        "max": 1.6813166961273964,
+        "std": 0.10902649097293401,
+        "p5": 0.014713215182155182,
+        "p50": 0.08338821991640089,
+        "p95": 0.3204658288720674
+      }
+    }
+  }
+}

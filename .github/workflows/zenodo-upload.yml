@@ -1,0 +1,128 @@
+# =============================================================================
+# zenodo-upload.yml — Upload data archive to Zenodo
+#
+# Manually triggered workflow that uploads all large data files listed in
+# zenodo_manifest.txt to a Zenodo deposit. Creates a draft by default;
+# set publish=true to publish immediately.
+#
+# Prerequisites:
+#   1. Create a Zenodo API token at https://zenodo.org/account/settings/applications/
+#   2. Add it as a repository secret named ZENODO_TOKEN
+#   3. (Optional) Add ZENODO_SANDBOX_TOKEN for testing on sandbox.zenodo.org
+#   4. Upload data files as a GitHub release asset (tar.gz) so the workflow
+#      can access them, OR run the upload script locally if you have the files.
+#
+# Data source: The workflow downloads a tar.gz archive from a GitHub release
+# that contains data/ and paper_figs_final/data/ directories matching the manifest.
+# Create the release with:
+#   tar czf hierx-paper-data.tar.gz data/*.graphml data/*.geojson \
+#       paper_figs_final/data/*.npz paper_figs_final/data/*.json
+#   gh release create data-v1 hierx-paper-data.tar.gz --title "Data archive v1"
+# =============================================================================
+name: Upload to Zenodo
+
+on:
+  workflow_dispatch:
+    inputs:
+      sandbox:
+        description: "Use Zenodo sandbox (for testing)"
+        type: boolean
+        default: true
+      publish:
+        description: "Publish deposit (irreversible — leave false to review draft first)"
+        type: boolean
+        default: false
+      release_tag:
+        description: "GitHub release tag containing data tar.gz (e.g. data-v1)"
+        type: string
+        required: true
+      deposit_id:
+        description: "Existing deposit ID to create a new version of (leave empty for new deposit)"
+        type: string
+        default: ""
+
+jobs:
+  upload:
+    name: Upload data to Zenodo
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download data from GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Downloading data archive from release: ${{ inputs.release_tag }}"
+          gh release download "${{ inputs.release_tag }}" \
+            --pattern "hierx-paper-data.tar.gz" \
+            --dir .
+
+          echo "Extracting archive..."
+          tar xzf hierx-paper-data.tar.gz
+          rm hierx-paper-data.tar.gz
+
+          echo "Files extracted:"
+          find data/ paper_figs_final/data/ -type f \( \
+            -name '*.graphml' -o -name '*.geojson' \
+            -o -name '*.npz' -o -name '*_accessibility.json' -o -name '*_data.json' \
+          \) | wc -l
+          echo "files found"
+
+      - name: Validate manifest coverage
+        run: |
+          python3 -m benchmarks_final.zenodo_upload --dry-run --update-checksums
+
+      - name: Upload to Zenodo
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          ZENODO_SANDBOX_TOKEN: ${{ secrets.ZENODO_SANDBOX_TOKEN }}
+        run: |
+          ARGS="--update-checksums"
+
+          if [ "${{ inputs.sandbox }}" = "true" ]; then
+            ARGS="$ARGS --sandbox"
+          fi
+
+          if [ "${{ inputs.publish }}" = "true" ]; then
+            ARGS="$ARGS --publish"
+          fi
+
+          if [ -n "${{ inputs.deposit_id }}" ]; then
+            ARGS="$ARGS --deposit-id ${{ inputs.deposit_id }}"
+          fi
+
+          python3 -m benchmarks_final.zenodo_upload $ARGS
+
+      - name: Upload updated manifest as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zenodo-manifest-updated
+          path: zenodo_manifest.txt
+
+      - name: Commit updated checksums
+        if: inputs.publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add zenodo_manifest.txt
+          if git diff --cached --quiet; then
+            echo "No manifest changes to commit"
+          else
+            git commit -m "Update zenodo_manifest.txt with SHA256 checksums
+
+          Checksums computed during Zenodo upload workflow.
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+            git push
+          fi

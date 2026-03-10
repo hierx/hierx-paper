@@ -1,0 +1,12 @@
+hierx @ git+https://github.com/hierx/hierx.git@v0.1.1
+numpy>=1.21
+scipy>=1.7
+networkx>=2.6
+pandas>=1.4
+geopandas>=0.12
+matplotlib>=3.5
+contextily>=1.0
+osmnx>=1.0
+requests>=2.28
+shapely>=2.0
+pytest>=7.0

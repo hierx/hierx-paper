@@ -1,0 +1,15 @@
+# Enforce Unix line endings for scripts and config files.
+# Prevents bash breakage on Windows clones with core.autocrlf=true.
+*.sh        text eol=lf
+*.py        text eol=lf
+*.txt       text eol=lf
+*.md        text eol=lf
+*.tex       text eol=lf
+*.bib       text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.json      text eol=lf
+*.csv       text eol=lf
+Dockerfile  text eol=lf
+Makefile    text eol=lf
+.gitignore  text eol=lf
