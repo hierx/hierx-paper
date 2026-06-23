@@ -247,6 +247,15 @@ run_figures() {
     python -m benchmarks_final.plot_baseline_comparison
     python -m benchmarks_final.plot_london_results
 
+    # Figure 7 requires error_anatomy_gb results (./reproduce.sh accessibility)
+    if [[ -f paper_figs_final/data/error_anatomy_gb_results.json ]]; then
+        python -m benchmarks_final.plot_error_anatomy
+    else
+        echo ""
+        echo "  SKIP: Figure 7 (error anatomy) — results JSON not found."
+        echo "  Run './reproduce.sh accessibility' to compute from scratch."
+    fi
+
     # Figure 6 requires .npz accessibility arrays that are not tracked in git.
     # Try to generate it, but don't fail the whole run if data is missing.
     if [[ -f paper_figs_final/data/gb_drive_pop_accessibility_nodes.npz ]] && \
@@ -321,11 +330,14 @@ run_london() {
 run_accessibility() {
     log "Computing accessibility maps"
 
-    log "1/2  GB driving accessibility"
+    log "1/3  GB driving accessibility"
     run_pyrosm python -m benchmarks_final.run_uk_drive_accessibility
 
-    log "2/2  London population accessibility"
+    log "2/3  London population accessibility"
     python -m benchmarks_final.run_population_accessibility
+
+    log "3/3  GB error anatomy (sampled exact ground truth, ~2-3 h)"
+    python -m benchmarks_final.error_anatomy_gb
 
     echo ""
     echo "Accessibility computations complete."

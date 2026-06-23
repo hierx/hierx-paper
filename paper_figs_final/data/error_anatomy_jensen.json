@@ -1,0 +1,28 @@
+{
+  "cutoff_s": 120.0,
+  "n_far_field_pairs": 468895,
+  "mu": -0.026784432839935382,
+  "sigma": 0.19611970154014408,
+  "per_kernel": {
+    "steep_paper": {
+      "beta": 2.0,
+      "predicted_bias": 0.16895767767645634,
+      "observed_bias": 0.14887489097670964
+    },
+    "very_steep": {
+      "beta": 2.0,
+      "predicted_bias": 0.16895767767645634,
+      "observed_bias": 0.16505288974480223
+    },
+    "moderate": {
+      "beta": 1.5,
+      "predicted_bias": 0.11229465675776906,
+      "observed_bias": 0.07210482519318473
+    },
+    "shallow": {
+      "beta": 1.0,
+      "predicted_bias": 0.06524737017213057,
+      "observed_bias": 0.03664383761487584
+    }
+  }
+}
