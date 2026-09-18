@@ -126,7 +126,9 @@
 
 <script>
 // CARTO basemap API key (free; request at https://carto.com/basemaps/apikey and
-// restrict it to this site's host). Override for testing with ?carto_key=KEY.
+// restrict it to this site's host). Override for testing with ?carto_key=KEY,
+// or ?carto_key=none for an unkeyed (watermarked) basemap when previewing
+// from a host the key is not registered for, e.g. localhost.
 const CARTO_API_KEY = "cb1_2fn0_2_d43796157da293b200c7b600";
 
 const protocol = new pmtiles.Protocol();
@@ -267,7 +269,8 @@ function activeLayerId() {
 // --- Map ---
 
 function cartoTileUrls() {
-  const key = params.get("carto_key") || CARTO_API_KEY;
+  const override = params.get("carto_key");
+  const key = override === "none" ? "" : (override || CARTO_API_KEY);
   const suffix = key ? `?key=${encodeURIComponent(key)}` : "";
   return ["a", "b", "c", "d"].map(
     (s) => `https://${s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png${suffix}`
