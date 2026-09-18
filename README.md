@@ -3,7 +3,8 @@
 Reproducibility materials for:
 
 > **HierX: Fast Multi-Scale Distance-Decay Interaction on Million-Node Networks**
-> Alexander Hellervik, Joakim Bohlin, and Claes Andersson (2026). arXiv preprint (forthcoming).
+> Alexander Hellervik, Joakim Bohlin, and Claes Andersson (2026).
+> *PNAS Nexus*, pgag317. <https://doi.org/10.1093/pnasnexus/pgag317>
 
 This repository contains benchmark scripts, data-fetching pipelines, and
 pre-computed results needed to reproduce every figure and table in the paper.
@@ -228,7 +229,8 @@ hierx-paper/
 
 - **hierx package**: <https://github.com/hierx/hierx>
 - **Data archive**: <https://doi.org/10.5281/zenodo.19062193>
-- **Paper DOI**: TBD (will be updated upon publication)
+- **Paper**: <https://doi.org/10.1093/pnasnexus/pgag317> (PNAS Nexus, open access)
+- **Interactive maps**: <https://hierx.github.io/hierx-paper/interactive_maps/index.html>
 
 ## License
 
