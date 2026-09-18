@@ -3,10 +3,19 @@
 
 Pipeline: NPZ → GeoJSONSeq → PMTiles (via tippecanoe).
 
+Two tile profiles are produced (see PROFILES):
+
+* ``full`` keeps every edge at every zoom. Overview tiles reach ~25 MB
+  decompressed, which desktop browsers handle but phones do not.
+* ``lite`` caps each tile at 2 MB by dropping the shortest edges first at
+  coarse zooms (``--drop-smallest-as-needed``), which keeps the long-distance
+  road skeleton and the urban colour pattern while cutting the overview
+  payload by an order of magnitude. Written to ``*_lite.pmtiles``.
+
 Usage:
     python interactive_maps/generate_pmtiles.py all
     python interactive_maps/generate_pmtiles.py gb_drive
-    python interactive_maps/generate_pmtiles.py london_walk
+    python interactive_maps/generate_pmtiles.py london_walk --profile lite
     python interactive_maps/generate_pmtiles.py london_walk --keep-geojson
     python interactive_maps/generate_pmtiles.py gb_drive --npz path/to/file.npz
 """
@@ -21,6 +30,17 @@ import time
 from pathlib import Path
 
 import numpy as np
+
+PROFILES: dict[str, dict] = {
+    "full": {
+        "suffix": "",
+        "tippecanoe": ["--no-feature-limit", "--no-tile-size-limit", "--drop-densest-as-needed"],
+    },
+    "lite": {
+        "suffix": "_lite",
+        "tippecanoe": ["--maximum-tile-bytes", "2000000", "--drop-smallest-as-needed"],
+    },
+}
 
 DATASETS: dict[str, dict] = {
     "gb_drive": {
@@ -109,8 +129,17 @@ def run_tippecanoe(
     pmtiles_path: Path,
     min_zoom: int = 8,
     max_zoom: int = 14,
+    profile: str = "full",
 ) -> None:
-    """Convert GeoJSONSeq to PMTiles using tippecanoe."""
+    """Convert GeoJSONSeq to PMTiles using tippecanoe.
+
+    Args:
+        geojson_path: Newline-delimited GeoJSON input.
+        pmtiles_path: Output archive.
+        min_zoom: Coarsest zoom level to generate.
+        max_zoom: Finest zoom level to generate.
+        profile: Key into PROFILES selecting the tile-size policy.
+    """
     import shutil
 
     tippecanoe = shutil.which("tippecanoe") or str(Path.home() / "bin" / "tippecanoe")
@@ -120,17 +149,15 @@ def run_tippecanoe(
         "-l", "accessibility",
         "-Z", str(min_zoom),
         "-z", str(max_zoom),
-        "--no-feature-limit",
-        "--no-tile-size-limit",
+        *PROFILES[profile]["tippecanoe"],
         "--no-line-simplification",
         "--force",
-        "--drop-densest-as-needed",
         "--extend-zooms-if-still-dropping",
         "-P",  # parallel read
         str(geojson_path),
     ]
 
-    print(f"Running tippecanoe...")
+    print("Running tippecanoe...")
     print(f"  {' '.join(cmd)}")
     t0 = time.time()
 
@@ -149,20 +176,24 @@ def generate_dataset(
     npz_override: Path | None = None,
     output_override: Path | None = None,
     keep_geojson: bool = False,
+    profiles: tuple[str, ...] = ("full", "lite"),
 ) -> None:
-    """Generate PMTiles for a single dataset."""
+    """Generate PMTiles for a single dataset, one archive per profile."""
     cfg = DATASETS[name]
     npz_path = npz_override or Path(cfg["npz"])
-    pmtiles_path = output_override or Path(cfg["output"])
+    base_path = output_override or Path(cfg["output"])
 
     print(f"\n{'='*60}")
-    print(f"Generating: {name}")
+    print(f"Generating: {name} ({', '.join(profiles)})")
     print(f"{'='*60}")
 
-    geojson_path = pmtiles_path.with_suffix(".geojsonl")
+    geojson_path = base_path.with_suffix(".geojsonl")
 
     stats = write_geojsonseq(npz_path, geojson_path)
-    run_tippecanoe(geojson_path, pmtiles_path, cfg["min_zoom"], cfg["max_zoom"])
+    for profile in profiles:
+        suffix = PROFILES[profile]["suffix"]
+        pmtiles_path = base_path.with_name(f"{base_path.stem}{suffix}{base_path.suffix}")
+        run_tippecanoe(geojson_path, pmtiles_path, cfg["min_zoom"], cfg["max_zoom"], profile)
 
     if not keep_geojson:
         geojson_path.unlink()
@@ -199,23 +230,31 @@ def main() -> None:
         action="store_true",
         help="Keep intermediate GeoJSONSeq file",
     )
+    parser.add_argument(
+        "--profile",
+        choices=["full", "lite", "both"],
+        default="both",
+        help="Tile-size profile to build (default: both)",
+    )
     args = parser.parse_args()
+    profiles = ("full", "lite") if args.profile == "both" else (args.profile,)
 
     if args.dataset == "all":
         if args.npz or args.output:
             print("Error: --npz and --output cannot be used with 'all'", file=sys.stderr)
             sys.exit(1)
         for name in DATASETS:
-            generate_dataset(name, keep_geojson=args.keep_geojson)
+            generate_dataset(name, keep_geojson=args.keep_geojson, profiles=profiles)
     else:
         generate_dataset(
             args.dataset,
             npz_override=args.npz,
             output_override=args.output,
             keep_geojson=args.keep_geojson,
+            profiles=profiles,
         )
 
-    print(f"\nServe locally: python interactive_maps/serve.py")
+    print("\nServe locally: python interactive_maps/serve.py")
 
 
 if __name__ == "__main__":

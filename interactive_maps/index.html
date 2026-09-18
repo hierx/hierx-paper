@@ -47,13 +47,34 @@
     border: 1px solid #ccc; border-radius: 4px; background: #fff;
   }
   .info-box a { color: #2563eb; }
+  .panel-toggle {
+    display: none; position: absolute; top: 10px; left: 10px; z-index: 2;
+    background: rgba(255,255,255,0.95); border: 0; border-radius: 8px;
+    padding: 8px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 14px; font-family: inherit; cursor: pointer;
+  }
+  /* Phone layout: collapse the control panel behind a button, shrink the
+     info box to one line, and keep the legend clear of the zoom buttons. */
+  @media (max-width: 640px) {
+    .panel-toggle { display: block; }
+    .control-panel { display: none; top: 52px; max-width: calc(100% - 52px); }
+    .control-panel.open { display: block; }
+    .info-box {
+      top: 10px; left: 110px; right: 10px; max-width: none;
+      padding: 6px 10px; font-size: 11px; line-height: 1.35;
+    }
+    .info-box .desktop-only { display: none; }
+    .legend { bottom: 24px; left: 10px; right: 64px; min-width: 0; padding: 8px 10px; }
+  }
   .maplibregl-popup-content { font-size: 13px; padding: 10px 14px; }
 </style>
 </head>
 <body>
 <div id="map"></div>
 
-<div class="control-panel">
+<button class="panel-toggle" id="panel-toggle" aria-expanded="false" aria-controls="control-panel">&#9776; Options</button>
+
+<div class="control-panel" id="control-panel">
   <div class="control-section">
     <h3>Network</h3>
     <label><input type="radio" name="dataset" value="gb_drive" checked /> GB Driving</label>
@@ -64,6 +85,12 @@
     <h3>Metric</h3>
     <label><input type="radio" name="metric" value="pop" checked /> Population reached</label>
     <label><input type="radio" name="metric" value="emp" /> Employment reached</label>
+  </div>
+  <div class="control-divider"></div>
+  <div class="control-section">
+    <h3>Detail</h3>
+    <label><input type="radio" name="tiles" value="full" /> Full (computer)</label>
+    <label><input type="radio" name="tiles" value="lite" /> Light (phone)</label>
   </div>
   <div class="control-divider"></div>
   <div class="control-section">
@@ -93,11 +120,15 @@
 <div class="info-box" id="info-box">
   <strong id="info-title">GB Driving Network</strong><br/>
   <span id="info-stats">2.58M nodes · 3.02M edges</span><br/>
-  Hierarchical O(n log n) accessibility<br/>
+  <span class="desktop-only">Hierarchical O(n log n) accessibility<br/></span>
   <a href="https://github.com/hierx/hierx" target="_blank">github.com/hierx/hierx</a>
 </div>
 
 <script>
+// CARTO basemap API key (free; request at https://carto.com/basemaps/apikey and
+// restrict it to this site's host). Override for testing with ?carto_key=KEY.
+const CARTO_API_KEY = "";
+
 const protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
 
@@ -106,10 +137,16 @@ maplibregl.addProtocol("pmtiles", protocol.tile);
 const DATASETS = {
   gb_drive: {
     label: "GB Driving Network",
-    pmtilesFile: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/gb_drive_accessibility.pmtiles",
+    pmtilesFile: {
+      full: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/gb_drive_accessibility.pmtiles",
+      lite: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/gb_drive_accessibility_lite.pmtiles",
+    },
     center: [-2.5, 54.0],
     zoom: 6,
-    lineWidth: ["interpolate", ["linear"], ["zoom"], 5, 0.4, 8, 0.8, 11, 1.5, 13, 2.5],
+    lineWidth: {
+      full: ["interpolate", ["linear"], ["zoom"], 5, 0.4, 8, 0.8, 11, 1.5, 13, 2.5],
+      lite: ["interpolate", ["linear"], ["zoom"], 5, 0.6, 8, 1.0, 11, 1.5, 13, 2.5],
+    },
     info: { nodes: "2.58M", edges: "3.02M" },
     metrics: {
       pop: { property: "pop_reached", title: "Population reached", min: 0.0808, max: 7.6392 },
@@ -118,10 +155,16 @@ const DATASETS = {
   },
   london_walk: {
     label: "London Walking Network",
-    pmtilesFile: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/london_walk_accessibility.pmtiles",
+    pmtilesFile: {
+      full: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/london_walk_accessibility.pmtiles",
+      lite: "https://pub-0ecc092bf5574617a567a617c14b5d81.r2.dev/london_walk_accessibility_lite.pmtiles",
+    },
     center: [-0.117, 51.507],
     zoom: 11,
-    lineWidth: ["interpolate", ["linear"], ["zoom"], 8, 1, 11, 1.5, 14, 3],
+    lineWidth: {
+      full: ["interpolate", ["linear"], ["zoom"], 8, 1, 11, 1.5, 14, 3],
+      lite: ["interpolate", ["linear"], ["zoom"], 8, 1.1, 11, 1.5, 14, 3],
+    },
     info: { nodes: "1.77M", edges: "1.92M" },
     metrics: {
       pop: { property: "pop_reached", title: "Population reached", min: 0.0161, max: 1.5484 },
@@ -130,11 +173,28 @@ const DATASETS = {
   },
 };
 
-// URL overrides: ?gb_drive=URL&london_walk=URL
+// URL overrides: ?gb_drive=URL&london_walk=URL&tiles=full|lite
 const params = new URLSearchParams(window.location.search);
 
+// Tile profile. "full" is the complete edge set (overview tiles up to
+// ~25 MB each, fine on a computer); "lite" caps tiles at 2 MB by dropping a
+// uniform fraction of edges at coarse zooms, which phones can hold in memory.
+function detectProfile() {
+  const p = params.get("tiles");
+  if (p === "full" || p === "lite") return p;
+  const small = window.matchMedia("(max-width: 640px)").matches;
+  const touch = window.matchMedia("(pointer: coarse)").matches;
+  const lowMem = navigator.deviceMemory !== undefined && navigator.deviceMemory <= 4;
+  return small || touch || lowMem ? "lite" : "full";
+}
+let tileProfile = detectProfile();
+
 function pmtilesUrl(dsKey) {
-  return params.get(dsKey) || DATASETS[dsKey].pmtilesFile;
+  return params.get(dsKey) || DATASETS[dsKey].pmtilesFile[tileProfile];
+}
+
+function lineWidthExpr(dsKey) {
+  return DATASETS[dsKey].lineWidth[tileProfile];
 }
 
 let activeDataset = "gb_drive";
@@ -206,6 +266,14 @@ function activeLayerId() {
 
 // --- Map ---
 
+function cartoTileUrls() {
+  const key = params.get("carto_key") || CARTO_API_KEY;
+  const suffix = key ? `?key=${encodeURIComponent(key)}` : "";
+  return ["a", "b", "c", "d"].map(
+    (s) => `https://${s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png${suffix}`
+  );
+}
+
 const startDs = DATASETS[activeDataset];
 const map = new maplibregl.Map({
   container: "map",
@@ -214,7 +282,7 @@ const map = new maplibregl.Map({
     sources: {
       carto: {
         type: "raster",
-        tiles: ["https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png"],
+        tiles: cartoTileUrls(),
         tileSize: 256,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; &copy; <a href="https://carto.com/">CARTO</a>',
       },
@@ -249,8 +317,8 @@ map.on("load", () => {
         "source-layer": "accessibility",
         paint: {
           "line-color": colorExpr(mcfg.property, mcfg.min, mcfg.max),
-          "line-width": ds.lineWidth,
-          "line-opacity": 0.85,
+          "line-width": lineWidthExpr(dsKey),
+          "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 1.0, 10, 0.85],
         },
         layout: {
           visibility: isActive ? "visible" : "none",
@@ -359,6 +427,14 @@ function updateInfoBox() {
 
 // --- Controls ---
 
+// Phone layout: show/hide the control panel
+const panelToggle = document.getElementById("panel-toggle");
+const controlPanel = document.getElementById("control-panel");
+panelToggle.addEventListener("click", () => {
+  const open = controlPanel.classList.toggle("open");
+  panelToggle.setAttribute("aria-expanded", String(open));
+});
+
 // Network switch
 document.querySelectorAll('input[name="dataset"]').forEach(radio => {
   radio.addEventListener("change", (e) => {
@@ -374,6 +450,16 @@ document.querySelectorAll('input[name="dataset"]').forEach(radio => {
     } else {
       resetToGlobalRange();
     }
+  });
+});
+
+// Detail (tile profile) switch: reload with the choice in the URL
+document.querySelector(`input[name="tiles"][value="${tileProfile}"]`).checked = true;
+document.querySelectorAll('input[name="tiles"]').forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("tiles", e.target.value);
+    window.location.href = url.toString();
   });
 });
 
